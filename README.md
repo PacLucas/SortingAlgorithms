@@ -1,6 +1,6 @@
 # SortingAlgorithms
 <h1 align="center">
-  <img src="./src/img/iha.png" alt="SortingAlgorithms" width=425>
+  <img src="./src/img/iha.png" alt="SortingAlgorithms" width=700>
 </h1>
 
 <p align="center">Código com sortings mais famosos atualemnte</p>
