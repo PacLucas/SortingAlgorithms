@@ -43,7 +43,7 @@ $ ./sorting
 ### [Merge Sort](https://wikipedia.org/wiki/Merge_sort)
 **Worst, Average and Best Case Time Complexity:** O(n log n)
 
-### [Quick Sorthttps](://wikipedia.org/wiki/Quicksort)
+### [Quick Sort](https://wikipedia.org/wiki/Quicksort)
 **Worst Case Time Complexity:** O(n²)
 
 **Average and Best Case Time Complexity:** O(n log n)
