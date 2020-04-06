@@ -2,8 +2,7 @@
 Quarantine Coding, April 2020
 Program to implemente Quick Sort in C using last element as pivot
 */
-#include <stdio.h>
-#include "baseInput.h"
+#include "src/baseInput.h"
 
 int div(int low, int high){
   int piv = arr[high];

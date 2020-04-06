@@ -2,8 +2,7 @@
 Quarantine Coding, April 2020
 Program to implemente Merge Sort in C
 */
-#include <stdio.h>
-#include "baseInput.h"
+#include "src/baseInput.h"
 
 int auxArr[100];
 

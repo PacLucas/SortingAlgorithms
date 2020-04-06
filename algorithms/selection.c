@@ -2,8 +2,7 @@
 Quarantine Coding, April 2020
 Program to implemente Selection Sort in C
 */
-#include <stdio.h>
-#include "baseInput.h"
+#include "src/baseInput.h"
 
 //Func to implemente Selection Sort
 void selection_sort(int num){

@@ -2,10 +2,8 @@
 Quarantine Coding, April 2020
 Program to implemente Bubble Sort in C
 */
-#include <stdio.h>
-#include "/input/baseInput.h"
+#include "src/baseInput.h"
 
-void bubble_sort(int num);
 
 //Func to implement Bubble Sort
 void bubble_sort(int num){
