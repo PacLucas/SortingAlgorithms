@@ -24,33 +24,31 @@ int init(){
 
   int input;
   asciiArt();
-  printf("\nChoose input format:\n1 - input.txt\n2 - Mersenne Twister (pseudorandom number generator) \n");
+  printf("\nChoose input format:\n1 - input.txt\n2 - Mersenne Twister (pseudorandom number generator)\n0 - Exit\n");
   scanf("%d", &input);
 
   switch (input){
-  case 1: 
-    asciiArt();
+    case 1: 
+      asciiArt();
+      if((link = fopen("src/input.txt","r+")) == NULL){ // Check if the file is empty
+        printf("Erro na abertura do arquivo de entrada!\n");
+        exit(1);
+      }
+      fscanf(link, "%d", &num);
+      for(int i = 0; i < num; i++)  fscanf(link, "%d", &arr[i]);
+
+      break;
     
-    if((link = fopen("src/input.txt","r+")) == NULL){ // Check if the file is empty
-      printf("Erro na abertura do arquivo de entrada!\n");
+    case 2 :
+      asciiArt();
+      printf("\nNumbers to generate: ");
+      scanf("%d", &num);
+      for(int i = 0; i < num; i++)  arr[i] = (unsigned int)genrand_int32();
+      break;
+
+    case 0 :
+      asciiArt();
       exit(1);
-    }
-
-    fscanf(link, "%d", &num);
-
-    for(int i = 0; i < num; i++)  fscanf(link, "%d", &arr[i]);
-
-    break;
-  
-  case 2 :
-    asciiArt();
-    
-    printf("\nNumbers to generate: ");
-    scanf("%d", &num);
-    
-    for(int i = 0; i < num; i++)  arr[i] = (unsigned int)genrand_int32();
-    
-    break;
   }
 
   return num;
@@ -63,6 +61,6 @@ void fin(int num){
   for(int i = 0; i < num; i++){
     printf("%d ", arr[i]);
   }
-  printf("]\n");
+  printf("]\n\n");
   //printf("Iterations: %d\n", count);
 }
