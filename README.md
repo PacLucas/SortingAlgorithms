@@ -13,6 +13,6 @@
 
 ##Uso
 Após clonar o repository, abra o terminal diretamente no file e digite
-'gcc main.c sortAlg.c src/baseInput.c src/ranGen/mt19937ar.c -o sorting'
+>gcc main.c sortAlg.c src/baseInput.c src/ranGen/mt19937ar.c -o sorting<
 após compilar, execute por
-'./sorting'
+>./sorting<
